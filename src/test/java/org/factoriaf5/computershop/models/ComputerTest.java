@@ -54,7 +54,6 @@ public class ComputerTest {
         computer.setPrice(200.0);
         assertThat(computer.getPrice(), is(equalTo(200.0)));
 
-
     }
 
     @Test

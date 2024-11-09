@@ -31,3 +31,11 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Archivos de configuración local de Maven
+.mvn/
+mvnw
+mvnw.cmd
+
+# Archivos de registro y configuración específicos del entorno de Maven
+*.log
