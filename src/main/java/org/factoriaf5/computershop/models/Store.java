@@ -65,11 +65,16 @@ public class Store {
         return null;
     }    
 
-        public void listComputers() {
-            for (Computer computer : computers) {
-                System.out.println(computer);
-            }
+    public List<String> listComputers() {
+        List<String> computerDetails = new ArrayList<>();
+        for (Computer computer : computers) {
+            computerDetails.add("Brand: " + computer.getBrand() +
+                                ", Memory: " + computer.getMemory() +
+                                ", Processor: " + computer.getProcessador() +
+                                ", OS: " + computer.getOperatingSystem() +
+                                ", Price: " + computer.getPrice());
         }
-
-
+        return computerDetails;
+    }
+    
 }
