@@ -47,7 +47,29 @@ public class Store {
     public void setComputers(List<Computer> computers) {
         this.computers = computers;
     }
- 
+
+    public void addComputer(Computer computer) {
+        computers.add(computer);
+    }
+
+    public void removeComputerByBrand(String brand) {
+        computers.removeIf(computer -> computer.getBrand().equals(brand));
+    }
+
+    public Computer searchComputerByBrand(String brand) {
+        for (Computer computer : computers) {
+            if (computer.getBrand().equals(brand)) {
+                return computer;
+            }
+        }
+        return null;
+    }    
+
+        public void listComputers() {
+            for (Computer computer : computers) {
+                System.out.println(computer);
+            }
+        }
 
 
 }
