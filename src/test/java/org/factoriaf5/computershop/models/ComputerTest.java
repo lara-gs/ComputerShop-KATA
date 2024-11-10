@@ -1,5 +1,5 @@
 package org.factoriaf5.computershop.models;
-import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;
 
 import org.junit.jupiter.api.Test;
@@ -28,7 +28,7 @@ public class ComputerTest {
     @Test
     void testGetProcessador() {
         Computer computer = new Computer("Dell", 8, "Intel i7", "Windows 10", 700.0);
-        assertThat(computer.getProcessador(), is(equalTo("Intel i7")));
+        assertThat(computer.getProcessor(), is(equalTo("Intel i7")));
 
     }
 
@@ -59,8 +59,8 @@ public class ComputerTest {
     @Test
     void testSetProcessador() {
         Computer computer = new Computer("Dell", 8, "Intel i7", "Windows 10", 700.0);
-        computer.setProcessador("Ryzen 9");
-        assertThat(computer.getProcessador(), is(equalTo("Ryzen 9")));
+        computer.setProcessor("Ryzen 9");
+        assertThat(computer.getProcessor(), is(equalTo("Ryzen 9")));
 
     }
 }

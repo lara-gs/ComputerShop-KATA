@@ -71,7 +71,6 @@ public class StoreTest {
 
     @Test
     void testAddComputer() {
-        List<Computer> computers = Arrays.asList();
         Store store = new Store("MissingXP", "Travis Gutierrez", 0000123, null);
         Computer computer = new Computer("HP", 2, "Intel", "Windows 95", 100.00);
         store.addComputer(computer);
@@ -80,7 +79,6 @@ public class StoreTest {
 
     @Test
     void testRemoveComputerByBrand() {
-        List<Computer> computers = Arrays.asList();
         Store store = new Store("MissingXP", "Travis Gutierrez", 0000123, null);
         Computer computer1 = new Computer("HP", 2, "Intel", "Windows 95", 100.00);
         Computer computer2 = new Computer("Dell", 16, "AMD Ryzen 7", "Windows 10", 1800.00);
@@ -93,7 +91,6 @@ public class StoreTest {
 
     @Test
     void testSearchComputerByBrand() {
-        List<Computer> computers = Arrays.asList();
         Store store = new Store("MissingXP", "Travis Gutierrez", 0000123, null);
         Computer computer1 = new Computer("HP", 2, "Intel", "Windows 95", 100.00);
         Computer computer2 = new Computer("Dell", 16, "AMD Ryzen 7", "Windows 10", 1800.00);
@@ -107,7 +104,6 @@ public class StoreTest {
 
     @Test
     void testListComputers() {
-        List<Computer> computers = Arrays.asList();
         Store store = new Store("MissingXP", "Travis Gutierrez", 0000123, null);
         Computer computer1 = new Computer("HP", 2, "Intel", "Windows 95", 100.00);
         Computer computer2 = new Computer("Dell", 16, "AMD Ryzen 7", "Windows 10", 1800.00);

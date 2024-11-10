@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Store {
+    private int id_store;
     private String name;
     private String owner;
     private int taxId;
@@ -70,11 +71,19 @@ public class Store {
         for (Computer computer : computers) {
             computerDetails.add("Brand: " + computer.getBrand() +
                                 ", Memory: " + computer.getMemory() +
-                                ", Processor: " + computer.getProcessador() +
+                                ", Processor: " + computer.getProcessor() +
                                 ", OS: " + computer.getOperatingSystem() +
                                 ", Price: " + computer.getPrice());
         }
         return computerDetails;
+    }
+
+    public int getId_store() {
+        return id_store;
+    }
+
+    public void setId_store(int id_store) {
+        this.id_store = id_store;
     }
     
 }

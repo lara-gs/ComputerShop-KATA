@@ -1,16 +1,17 @@
 package org.factoriaf5.computershop.models;
 
 public class Computer {
+    private int id_computer;
     private String brand;
     private int memory;
-    private String processador;
+    private String processor;
     private String operatingSystem;
     private double price;
     
-    public Computer(String brand, int memory, String processador,String operatingSystem, double price) {
+    public Computer(String brand, int memory, String processor,String operatingSystem, double price) {
         this.brand = brand;
         this.memory = memory;
-        this.processador = processador;
+        this.processor = processor;
         this.operatingSystem = operatingSystem;
         this.price = price;
     }
@@ -31,12 +32,12 @@ public class Computer {
         this.memory = memory;
     }
 
-    public String getProcessador() {
-        return processador;
+    public String getProcessor() {
+        return processor;
     }
 
-    public void setProcessador(String processador) {
-        this.processador = processador;
+    public void setProcessor(String processor) {
+        this.processor = processor;
     }
     
     public double getPrice() {
@@ -53,6 +54,14 @@ public class Computer {
 
     public void setOperatingSystem(String operatingSystem) {
         this.operatingSystem = operatingSystem;
+    }
+
+    public int getId_computer() {
+        return id_computer;
+    }
+
+    public void setId_computer(int id_computer) {
+        this.id_computer = id_computer;
     }
 
     
