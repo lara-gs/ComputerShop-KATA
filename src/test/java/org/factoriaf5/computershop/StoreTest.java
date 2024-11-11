@@ -1,4 +1,4 @@
-package org.factoriaf5.computershop.models;
+package org.factoriaf5.computershop;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;

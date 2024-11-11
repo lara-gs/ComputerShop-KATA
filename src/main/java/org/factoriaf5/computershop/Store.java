@@ -1,4 +1,4 @@
-package org.factoriaf5.computershop.models;
+package org.factoriaf5.computershop;
 
 import java.util.ArrayList;
 import java.util.List;

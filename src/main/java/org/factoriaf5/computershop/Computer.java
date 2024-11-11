@@ -1,4 +1,4 @@
-package org.factoriaf5.computershop.models;
+package org.factoriaf5.computershop;
 
 public class Computer {
     private int id_computer;
