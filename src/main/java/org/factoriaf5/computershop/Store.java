@@ -10,7 +10,8 @@ public class Store {
     private int taxId;
     private List<Computer> computers;
 
-    public Store(String name, String owner, int taxId, List<Computer> computers) {
+    public Store(int id_store, String name, String owner, int taxId, List<Computer> computers) {
+        this.id_store = id_store;
         this.name = name;
         this.owner = owner;
         this.taxId = taxId;

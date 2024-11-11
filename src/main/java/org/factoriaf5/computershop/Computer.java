@@ -8,7 +8,8 @@ public class Computer {
     private String operatingSystem;
     private double price;
     
-    public Computer(String brand, int memory, String processor,String operatingSystem, double price) {
+    public Computer(int id_computer, String brand, int memory, String processor,String operatingSystem, double price) {
+        this.id_computer = id_computer;
         this.brand = brand;
         this.memory = memory;
         this.processor = processor;
